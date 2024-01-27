@@ -1,0 +1,166 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    width: 1920px;
+    margin: auto;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    color: white;
+    cursor: pointer;
+}
+
+.logoName {
+    color: var(--txt-Orange, #BB8C5F);
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 0;
+    padding-top: 10px;
+
+    
+}
+
+.logoShop {
+    color: var(--txt-Orange, #BB8C5F);
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 3.5px;
+    margin: 0;
+}
+.headerImg {
+    padding: 20px 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+main {
+    height: calc(100% - 150px);
+}
+
+.cards {
+    width: 292px;
+    height: 567px;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 50px;
+    
+}
+
+.cards-post {
+    background: var(--bg-card, #F5F5F5);
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.10);
+    padding-left: 30px;
+}
+
+.card-img {
+    padding-top: 15px;
+}
+
+.model {
+    width: 229px;
+    height: 48px;
+    color: var(--txt-Dark, #3E424B);
+    font-family: Jost;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.price {
+    color: var(--txt-Orange, #BB8C5F);
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 25px;
+}
+
+.cartButton {
+    width: 259px;
+    height: 50px;
+    color: var(--txt-Orange, #BB8C5F);
+    text-align: center;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    border: 2px solid #BB8C5F;
+    cursor: pointer;
+    border-radius: 6px;
+  
+}
+
+.favorite {
+    display: flex;
+    position: absolute;
+    margin: 30px;
+    cursor: pointer;
+  }
+  
+.favorite.plus {
+    fill: #e4720e;
+    stroke: #ff7701;
+}
+
+.card-counter {
+    width: 292px;
+    display: flex;
+    gap: 60px;
+    margin: 10px 0;
+    align-items: center;
+    padding-top: 28px;
+    padding-left: 10px;
+}
+
+.handler {
+    width: 50.519px;
+    height: 50px;
+    border: 2px solid #BB8C5F;
+    border-radius: 6px;
+}
+.amount {
+    color: var(--txt-Dark, #3E424B);
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+footer {
+    height: 75px;
+}
