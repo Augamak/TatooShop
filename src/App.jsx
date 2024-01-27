@@ -14,6 +14,7 @@ export const App = () => {
       <Header/>
       <Main tatoo={tatoo} setTatoo={setTatoo}/>
       <Footer />
+      
     </>
   )
 }

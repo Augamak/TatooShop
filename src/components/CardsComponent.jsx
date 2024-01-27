@@ -23,6 +23,7 @@ export const CardsComponent = (props) => {
                 if(props.tatoo.id === tatoo.id) {
                     tatoo.favorite = !tatoo.favorite
                 }
+                
             })
             return temp
         })
