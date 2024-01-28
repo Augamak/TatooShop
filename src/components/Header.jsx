@@ -1,4 +1,9 @@
+import { useContext, useState } from "react";
+import { ShopContext } from "../App";
+
 export const Header = () => {
+    const {cart} = useContext(ShopContext)
+
     return (
         <header className="header">
             <div className="contacts">
@@ -10,7 +15,10 @@ export const Header = () => {
                 <p className="logoName">MR.DRISKELL</p>
                 <p className="logoShop">TATTO SHOP</p>
             </div>
-            <img className="headerImg" alt="cart" src="/public/assets/images/Cart.png"></img>
+            <div className="cart">
+                <img className="headerImg" alt="cart" src="/public/assets/images/Cart.png" />
+                {cart} Eur
+            </div>
         </header>    
     )
 }
