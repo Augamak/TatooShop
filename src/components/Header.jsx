@@ -1,8 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { ShopContext } from "../App";
 
 export const Header = () => {
     const {cart} = useContext(ShopContext)
+    const {totalProd} = useContext(ShopContext)
 
     return (
         <header className="header">
@@ -16,8 +17,9 @@ export const Header = () => {
                 <p className="logoShop">TATTO SHOP</p>
             </div>
             <div className="cart">
+                <div className="cartSum">{cart} Eur</div>
                 <img className="headerImg" alt="cart" src="/public/assets/images/Cart.png" />
-                {cart} Eur
+                <div className="quantityProduct">{totalProd}</div>
             </div>
         </header>    
     )

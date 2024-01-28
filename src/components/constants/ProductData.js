@@ -4,7 +4,7 @@ export const Cards = [
         image: './public/assets/images/tatooMashine2.png',
         favorite: true,
         model: 'Foxxx Kitsune Mini Black Vintage RCA',
-        price: '6 000 ₽',
+        price: '6000',
         button: 'Добавить в корзину'
     },
     {
@@ -12,7 +12,7 @@ export const Cards = [
         image: './public/assets/images/tatooMashine.png',
         favorite: false,
         model: 'Foxxx Viper Fox Golden Vintage Lot #1 RCA',
-        price: '8 730 ₽',
+        price: '8730 ',
         button: 'Добавить в корзину'
     },
     {
@@ -20,7 +20,7 @@ export const Cards = [
         image: './public/assets/images/tatooGloves.png',
         favorite: false,
         model: 'Нитровиниловые перчатки Wally Plastic S',
-        price: '20 ₽',
+        price: '20',
         button: 'Добавить в корзину'
     },
     {
@@ -28,7 +28,7 @@ export const Cards = [
         image: './public/assets/images/tatooProduct8.png',
         favorite: false,
         model: 'Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий',
-        price: '2 037 ₽',
+        price: '2037',
         button: 'Добавить в корзину'
     },
     {
@@ -36,7 +36,7 @@ export const Cards = [
         image: './public/assets/images/tatooMashine6.png',
         favorite: false,
         model: 'Verge Direct 2.1 Pink gip EGO 4 mm liners',
-        price: '2 037 ₽',
+        price: '2037',
         button: 'Добавить в корзину'
     },
     {
@@ -44,7 +44,7 @@ export const Cards = [
         image: './public/assets/images/tatooMashine5.png',
         favorite: false,
         model: 'Deuce Machines Direct Drive #7 RCA Samurai',
-        price: '8 000 ₽',
+        price: '8000',
         button: 'Добавить в корзину'
     },
     {
@@ -52,7 +52,7 @@ export const Cards = [
         image: './public/assets/images/tatooMashine4.png',
         favorite: false,
         model: 'Cyborg Machines Alter Rotary Axis Cross Sexy Nymph',
-        price: '11 000 ₽',
+        price: '11000',
         button: 'Добавить в корзину'
     },
     {
@@ -60,7 +60,7 @@ export const Cards = [
         image: './public/assets/images/tatooMashine3.png',
         favorite: false,
         model: 'Verge Direct 2.1 Gunmetal',
-        price: '10 900 ₽',
+        price: '10900',
         button: 'Добавить в корзину'
     },
     

@@ -11,12 +11,16 @@ export const App = () => {
 
   const [tatoo, setTatoo] = useState(Cards)
   const [cart, setCart] = useState(0)
+  const [totalProd, setTotalProd] = useState(0)
 
   const ctxObject = {
     cart,
     setCart,
     tatoo,
-    setTatoo
+    setTatoo,
+    totalProd,
+    setTotalProd
+
   }
 
   return (

@@ -4,7 +4,7 @@ import { ShopContext } from "../App";
 
 export const CardsComponent = (props) => {
 
-    const {setCart, setTatoo} = useContext(ShopContext)
+    const {setCart, setTatoo, setTotalProduct} = useContext(ShopContext)
 
     const [amount, setAmount] = useState(0);
 
@@ -36,6 +36,14 @@ export const CardsComponent = (props) => {
             return temp
         })
     }
+    
+    const addTotalProduct = () => {
+        setTotalProduct(prev => {
+            return prev + amount 
+        })
+        setAmount (0)
+    }
+
     return (
         <div className="cards-post">
             <div className={props.product.favorite ? "favorite plus" : "favorite"} onClick={favHandler}>
@@ -54,7 +62,6 @@ export const CardsComponent = (props) => {
                     <button className="handler minus" onClick={minusHandler}>-</button>
                     <div className="amount">{amount}</div>
                     <button className="handler plus" onClick={plusHandler}>+</button>
-                    <span>{amount ? `Total: ${amount * props.product.price} Eur` : ''}</span>
                 </div>
             </div>
         </div>
