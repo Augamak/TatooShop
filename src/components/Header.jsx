@@ -3,7 +3,7 @@ import { ShopContext } from "../App";
 
 export const Header = () => {
     const {cart} = useContext(ShopContext)
-    const {totalProd} = useContext(ShopContext)
+   
 
     return (
         <header className="header">
@@ -17,9 +17,9 @@ export const Header = () => {
                 <p className="logoShop">TATTO SHOP</p>
             </div>
             <div className="cart">
-                <div className="cartSum">{cart} Eur</div>
+                <div className="cartSum">{cart.totalPrice} Eur</div>
                 <img className="headerImg" alt="cart" src="/public/assets/images/Cart.png" />
-                <div className="quantityProduct">{totalProd}</div>
+                <div className="quantityProduct">{cart.itemsAmount}</div>
             </div>
         </header>    
     )

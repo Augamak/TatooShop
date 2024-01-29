@@ -4,7 +4,7 @@ body {
 }
 
 #root {
-    width: 1920px;
+    width: 1420px;
     margin: auto;
 }
 
@@ -97,7 +97,12 @@ body {
 }
 
 main {
+    width: 1420px;
     height: calc(100% - 150px);
+}
+
+.mainImg{
+    width: 1420px;
 }
 
 .cards {

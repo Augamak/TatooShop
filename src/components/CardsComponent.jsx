@@ -4,7 +4,7 @@ import { ShopContext } from "../App";
 
 export const CardsComponent = (props) => {
 
-    const {setCart, setTatoo, setTotalProduct} = useContext(ShopContext)
+    const {setCart, setTatoo} = useContext(ShopContext)
 
     const [amount, setAmount] = useState(0);
 
@@ -18,8 +18,13 @@ export const CardsComponent = (props) => {
         setAmount(amount + 1)
     }
     const addToCartHandler = () => {
-        setCart(prev => {
-            return prev + amount * props.product.price
+        setCart((prev) => {
+            return {
+                ...prev,
+                itemsAmount: prev.itemsAmount + amount,
+                totalPrice: prev.totalPrice + amount * props.product.price, 
+            }
+
         })
         setAmount (0)
     }
@@ -37,12 +42,6 @@ export const CardsComponent = (props) => {
         })
     }
     
-    const addTotalProduct = () => {
-        setTotalProduct(prev => {
-            return prev + amount 
-        })
-        setAmount (0)
-    }
 
     return (
         <div className="cards-post">

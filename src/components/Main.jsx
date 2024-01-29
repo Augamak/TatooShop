@@ -8,7 +8,7 @@ export const Main = () => {
 
     return (
         <main>
-            <img style={{backgroundColor: 'black'}} alt="pic" src="/public/assets/images/bg 2.png"></img>
+            <img className="mainImg" style={{backgroundColor: 'black'}} alt="pic" src="/public/assets/images/bg 2.png"></img>
             <div className="cards">
                 {
                     tatoo.map(product => {
