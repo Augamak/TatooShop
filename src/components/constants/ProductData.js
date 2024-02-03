@@ -2,7 +2,7 @@ export const Cards = [
     {
         id: '0',
         image: './public/assets/images/tatooMashine2.png',
-        favorite: true,
+        favorite: false,
         model: 'Foxxx Kitsune Mini Black Vintage RCA',
         price: '6000',
         button: 'Добавить в корзину'

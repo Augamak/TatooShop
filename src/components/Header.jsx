@@ -14,12 +14,16 @@ export const Header = () => {
             
             <div className="logo">
                 <p className="logoName">MR.DRISKELL</p>
+                <img className="lineLogo" src="./public/assets/images/Line9.svg" alt="line" />
                 <p className="logoShop">TATTO SHOP</p>
             </div>
             <div className="cart">
                 <div className="cartSum">{cart.totalPrice} Eur</div>
-                <img className="headerImg" alt="cart" src="/public/assets/images/Cart.png" />
-                <div className="quantityProduct">{cart.itemsAmount}</div>
+                <div className="cartAndQuantity">
+                    <img className="headerImg" alt="cart" src="/public/assets/images/Cart.png" />
+                    <div className="quantityProduct">{cart.itemsAmount}</div>
+                </div>
+                
             </div>
         </header>    
     )
